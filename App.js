@@ -50,4 +50,7 @@ app.post('/',function(req,res){
     res.redirect('/');
 });
 
-app.listen(3000);
+app.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
+// app.listen(3000);
